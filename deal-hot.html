@@ -1,0 +1,703 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="<?php echo $dm; ?>" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- link carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- LINK GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="stylesheet" href="./public/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./public/owlcarousel/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css?version=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+
+    <!-- js carousel -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="./public/js/jquery.js"></script>
+    <!-- <script src="./public/js/script.js"></script> -->
+
+    <script type="text/javascript" src="public/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./public/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>AntHome</title>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header row m0 cwhite pRl" id="header">
+        <div class="p6">
+            <div class="headertop d-flex align-items-center justify-content-between">
+                <div class="col-lg-2 ">
+                    <div>
+                        <label class="mobile cursor" for="nav__input"><i class="bi bi-list"></i></label>
+                        <input type="checkbox" class="nav__input" id="nav__input">
+                        <label for="nav__input" class="overlaynav pF"></label>
+                        <div class="navmobile pF">
+                            <label for="nav__input" class="cblack pe-3 cursor" style="font-size: 22px; float: right;"><i
+                                    class="bi bi-x-lg"></i></label>
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav__link active" href="index.html" title="Trang chủ">Trang chủ</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav__link" href="intro.html" title="Giới thiệu">Giới thiệu</a>
+                                </li>
+                                <li class=" nav-item has-childs  has-mega">
+                                    <a href="product.html" class="nav__link" title="Sản phẩm">Sản phẩm <i
+                                            class="bi bi-chevron-down"></i></a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav__link" href="deal-hot.html" title="Deal Hot">Deal Hot</a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav__link" href="thuong-hieu-noi-bat.html" title="Thương hiệu nổi bật">Thương
+                                        hiệu
+                                        nổi
+                                        bật</a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav__link" href="blog.html" title="Tin tức">Tin tức</a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav__link" href="contact.html" title="Liên hệ">Liên hệ</a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav__link" href="faq.html" title="FAQ">FAQ</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="index.html" class="header__logo-link pc">
+                        <img src="./img/logo/logo.png" alt="" class="header__logo">
+                    </a>
+                </div>
+                <div class="col-lg-6  d-flex justify-content-center">
+                    <a href="index.html" class="header__logo-link mobile">
+                        <img src="./img/logo/logo.png" alt="" class="header__logo">
+                    </a>
+                    <form class="pRl searchpc pc w100">
+                        <input type="text" class="search-auto form-control" placeholder="Tìm sản phẩm..."
+                            autocomplete="off">
+                        <button class="btn btn-default" type="submit" aria-label="Tìm kiếm">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center iconheader">
+                    <div href="" class="mobile searchmb pRl me-3">
+                        <input type="checkbox" class="search__input" id="search__input">
+                        <label for="search__input" class="overlaysearch pF"></label>
+                        <label for="search__input" class="cursor">
+                            <i class="bi bi-search"></i>
+                        </label>
+                        <div class="searchnav pF">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4>Tìm kiếm sản phẩm</h4>
+                                <label for="search__input" class="cursor"><i class="bi bi-x-lg"></i></label>
+                            </div>
+                            <form action="" class="input-group my-3">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm ở đây..."
+                                    autocomplete="off">
+                                <button class="bgprimary cwhite"><i class="cwhite bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="" class="pc "><i class="me-1 bi bi-heart"></i> <span>Yêu thích</span></a>
+                    <a href="" class="pc"><i class="me-1 bi bi-person"></i> <span>Tài khoản</span></a>
+                    <a href="" class="d-flex">
+                        <i class="me-1 bi bi-bag pc"></i>
+                        <div class="mobile pRl">
+                            <input type="checkbox" class="cart__input" id="cart__input">
+                            <label for="cart__input" class="overlaycart pF"></label>
+                            <label for="cart__input" class="cursor"><i class="me-1 bi bi-bag"></i></label>
+                            <div class="cartmobile pF">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4>Tìm kiếm sản phẩm</h4>
+                                    <label for="cart__input" class="cursor"><i class="bi bi-x-lg"></i></label>
+                                </div>
+                                <div class="iconcart"></div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="bgprimary cwhite ">Tiếp tục mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="pc">Giỏ hàng</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header-main-nav d-flex justify-content-center dn">
+                <ul id="nav" class="nav">
+                    <li class="nav-item ">
+                        <a class="nav__link active" href="index.html" title="Trang chủ">Trang chủ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav__link" href="intro.html" title="Giới thiệu">Giới thiệu</a>
+                    </li>
+                    <li class=" nav-item has-childs  has-mega hoverproductlist">
+                        <a href="product.html" class="nav__link " title="Sản phẩm">Sản phẩm <i
+                                class="bi bi-chevron-down"></i></a>
+
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav__link" href="deal-hot.html" title="Deal Hot">Deal Hot</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav__link" href="thuong-hieu-noi-bat.html" title="Thương hiệu nổi bật">Thương hiệu nổi
+                            bật</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav__link" href="blog.html" title="Tin tức">Tin tức</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav__link" href="contact.html" title="Liên hệ">Liên hệ</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav__link" href="faq.html" title="FAQ">FAQ</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- <div class="dropdownmenu d-flex" id="dropdownmenu">
+                <div class="col-lg-8">
+                    <ul class="level10">
+                        <li class="level11 col-lg-3">
+                            <a href="" class="level11__link">Nội thất</a>
+                            <ul class="level12">
+                                <li class="level13">
+                                    <a href="">Phòng khách</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng ăn</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng ngủ</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng làm việc</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng cho bé</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Nội thất thông minh</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level11 col-lg-3">
+                            <a href="" class="level11__link">Nội thất</a>
+                            <ul class="level12">
+                                <li class="level13">
+                                    <a href="">Phòng khách</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng ăn</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng ngủ</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng làm việc</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng cho bé</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="level11 col-lg-3">
+                            <a href="" class="level11__link">Nội thất</a>
+                            <ul class="level12">
+                                <li class="level13">
+                                    <a href="">Phòng khách</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng ăn</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng ngủ</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng làm việc</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng cho bé</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level11 col-lg-3">
+                            <a href="" class="level11__link">Nội thất</a>
+                            <ul class="level12">
+                                <li class="level13">
+                                    <a href="">Phòng khách</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng ăn</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng ngủ</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng làm việc</a>
+                                </li>
+                                <li class="level13">
+                                    <a href="">Phòng cho bé</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 imgdrop">
+                    <a href="">
+                        <img src="./img/background/mega-1-image.webp" alt="">
+                    </a>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+    <!-- header -->
+    <!-- main -->
+    <!-- banner -->
+    <div class="banner row m0 cursor p0">
+        <a href="" class="p0">
+            <img src="./img/banner/slider_1.jpg" alt="">
+        </a>
+    </div>
+    <!-- banner -->
+
+    <!--category product -->
+    <div class="categoryproduct row m0">
+        <div class="p6">
+            <div class="categoryproduct__content text-center">
+                <h3 class="titleH3">DANH MỤC SẢN PHẨM</h3>
+                <p class="short-desc">Ant Home là giải pháp thương mại điện tử hiện đại và chuyên biệt trong lĩnh vực
+                    bán lẻ nội thất, đồ trang trí và điện gia dụng trong gia đình, định vị trở thành một giải pháp tiên
+                    phong trong định hình phong cách sống hiện đại cho các gia chủ tại Việt Nam và khu vực Đông Nam Á
+                    qua sự kết hợp của những thương hiệu nội thất hàng đầu với đa dạng phong cách và trải nghiệm mua sắm
+                    xuyên suốt, trực quan thông qua việc tích hợp các ứng dụng 3D visualization, Home Styler, AR và các
+                    giải pháp tài chính. </p>
+            </div>
+            <div class="categoryproduct__list text-center" id="categoryproduct__list">
+            </div>
+        </div>
+    </div>
+    <!--category product -->
+
+    <!-- section_banner -->
+    <div class="section_banner row m0">
+        <div class="p6">
+            <a href="">
+                <img src="./img/banner/feature_banner.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- section_banner -->
+
+
+    <!-- sale product -->
+    <div class="sale row m0">
+        <div class="p6 text-center">
+            <a href="">
+                <h3 class="titleH3">Top sản phẩm bán chạy</h3>
+            </a>
+            <div class="owl-carousel salecarousel owl-theme">
+                <div class="item">
+                    <a href="" class="sale__img">
+                        <img src="./img/saleproduct/product1.jpg" alt="" class="saleimg active">
+                    </a>
+                    <div class="sale__thumbs-list">
+                        <div class="sale__thumebs-item active">
+                            <img src="./img/saleproduct/producticon1.jpg" alt="">
+                        </div>
+                        <div class="sale__thumebs-item">
+                            <img src="./img/saleproduct/producticon1-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sale__info">
+                        <a href="">Bộ 2 Bàn Sofa IGEA Việt Nam Phong Cách Scanvadian Màu Trắng</a>
+                    </div>
+                    <span class="price">569.000₫</span>
+                </div>
+                <div class="item">
+                    <a href="" class="sale__img">
+                        <img src="./img/saleproduct/product1.jpg" alt="" class="saleimg active">
+                    </a>
+                    <div class="sale__thumbs-list">
+                        <div class="sale__thumebs-item active">
+                            <img src="./img/saleproduct/producticon1.jpg" alt="">
+                        </div>
+                        <div class="sale__thumebs-item">
+                            <img src="./img/saleproduct/producticon1-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sale__info">
+                        <a href="">Bộ 2 Bàn Sofa IGEA Việt Nam Phong Cách Scanvadian Màu Trắng</a>
+                    </div>
+                    <span class="price">569.000₫</span>
+                </div>
+                <div class="item">
+                    <a href="" class="sale__img">
+                        <img src="./img/saleproduct/product1.jpg" alt="" class="saleimg active">
+                    </a>
+                    <div class="sale__thumbs-list">
+                        <div class="sale__thumebs-item active">
+                            <img src="./img/saleproduct/producticon1.jpg" alt="">
+                        </div>
+                        <div class="sale__thumebs-item">
+                            <img src="./img/saleproduct/producticon1-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sale__info">
+                        <a href="">Bộ 2 Bàn Sofa IGEA Việt Nam Phong Cách Scanvadian Màu Trắng</a>
+                    </div>
+                    <span class="price">569.000₫</span>
+                </div>
+                <div class="item">
+                    <a href="" class="sale__img">
+                        <img src="./img/saleproduct/product1.jpg" alt="" class="saleimg active">
+                    </a>
+                    <div class="sale__thumbs-list">
+                        <div class="sale__thumebs-item active">
+                            <img src="./img/saleproduct/producticon1.jpg" alt="">
+                        </div>
+                        <div class="sale__thumebs-item">
+                            <img src="./img/saleproduct/producticon1-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sale__info">
+                        <a href="">Bộ 2 Bàn Sofa IGEA Việt Nam Phong Cách Scanvadian Màu Trắng</a>
+                    </div>
+                    <span class="price">569.000₫</span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <button class="sale__btn bn">Xem tất cả</button>
+            </div>
+        </div>
+    </div>
+    <!-- sale product -->
+    <!-- partner -->
+    <div class="partner row m0">
+        <div class="p6">
+            <div class="owl-carousel partnercarousel owl-theme">
+                <div class="item">
+                    <img src="./img/partner/partner_1.webp" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/partner/partner_2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/partner/partner_3.webp" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/partner/partner_4.webp" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/partner/partner_5.webp" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/partner/partner_6.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- partner -->
+    <!-- sale product -->
+    <div class="sale row m0">
+        <div class="p6 text-center">
+            <a href="">
+                <h3 class="titleH3">Sản phẩm nhà xanh</h3>
+            </a>
+            <div class="owl-carousel salecarousel owl-theme">
+                <div class="item">
+                    <a href="" class="sale__img">
+                        <img src="./img/product/product1.webp" alt="" class="saleimg active">
+                    </a>
+                    <div class="sale__thumbs-list">
+                        <div class="sale__thumebs-item active">
+                            <img src="./img/product/product1-1.webp" alt="">
+                        </div>
+                        <div class="sale__thumebs-item">
+                            <img src="./img/product/product1-1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="sale__info">
+                        <a href="">Bộ 2 Bàn Sofa IGEA Việt Nam Phong Cách Scanvadian Màu Trắng</a>
+                    </div>
+                    <div class="price-box">
+                        <span class="price">8.569.000₫</span>
+                        <span class="old-price">8.500.000₫</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="" class="sale__img">
+                        <img src="./img/product/product1.webp" alt="" class="saleimg active">
+                    </a>
+                    <div class="sale__thumbs-list">
+                        <div class="sale__thumebs-item active">
+                            <img src="./img/product/product1-1.webp" alt="">
+                        </div>
+                        <div class="sale__thumebs-item">
+                            <img src="./img/product/product1-1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="sale__info">
+                        <a href="">Bộ 2 Bàn Sofa IGEA Việt Nam Phong Cách Scanvadian Màu Trắng</a>
+                    </div>
+                    <div class="price-box">
+                        <span class="price">8.569.000₫</span>
+                        <span class="old-price">8.500.000₫</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="" class="sale__img">
+                        <img src="./img/product/product1.webp" alt="" class="saleimg active">
+                    </a>
+                    <div class="sale__thumbs-list">
+                        <div class="sale__thumebs-item active">
+                            <img src="./img/product/product1-1.webp" alt="">
+                        </div>
+                        <div class="sale__thumebs-item">
+                            <img src="./img/product/product1-1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="sale__info">
+                        <a href="">Bộ 2 Bàn Sofa IGEA Việt Nam Phong Cách Scanvadian Màu Trắng</a>
+                    </div>
+                    <div class="price-box">
+                        <span class="price">8.569.000₫</span>
+                        <span class="old-price">8.500.000₫</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="" class="sale__img">
+                        <img src="./img/product/product1.webp" alt="" class="saleimg active">
+                    </a>
+                    <div class="sale__thumbs-list">
+                        <div class="sale__thumebs-item active">
+                            <img src="./img/product/product1-1.webp" alt="">
+                        </div>
+                        <div class="sale__thumebs-item">
+                            <img src="./img/product/product1-1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="sale__info">
+                        <a href="">Bộ 2 Bàn Sofa IGEA Việt Nam Phong Cách Scanvadian Màu Trắng</a>
+                    </div>
+                    <div class="price-box">
+                        <span class="price">8.569.000₫</span>
+                        <span class="old-price">8.500.000₫</span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <button class="sale__btn bn">Xem tất cả</button>
+            </div>
+        </div>
+    </div>
+    <!-- sale product -->
+    <!-- list banner -->
+    <div class="banners row m0">
+        <div class="p6">
+            <div class="bannerlist">
+                <div class="col-12 col-lg-4 col-sm-4 banneritem">
+                    <a href="">
+                        <img src="./img/banner/feature/feature_banner_1.webp" alt="">
+
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 col-sm-4 banneritem">
+                    <a href="">
+                        <img src="./img/banner/feature/feature_banner_2.webp" alt="">
+
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 col-sm-4 banneritem">
+                    <a href="">
+                        <img src="./img/banner/feature/feature_banner_3.webp" alt="">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- list banner -->
+
+    <!-- blog -->
+    <div class="blog row m0">
+        <div class="p6 my-5">
+            <a href="" class="text-center my-3">
+                <h3 class="titleH3">Cẩm nang nội thất</h3>
+            </a>
+            <div class="bloglist mt-5">
+                <div class="col-12 col-lg-4 col-sm-4 blogitem">
+                    <a href="" class="bloglink">
+                        <img src="./img/blog/bloglist-1-963x600-1.webp" alt="">
+                    </a>
+                    <div class="blog__info">
+                        <a href="" class="a-title">Nhà phố hai mái giúp gia chủ không cần điều hòa</a>
+                        <div class="author">
+                            20/07/2020 - Kiến Vàng
+                        </div>
+                        <p>
+                            Căn nhà trên mảnh đất 68 m2 ở quận 9 của một gia đình ba người. Để ngôi nhà thông gió và ít
+                            cần sử dụng điều hòa, kiế...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-sm-4 blogitem">
+                    <a href="" class="bloglink">
+                        <img src="./img/blog/black-and-white-1.webp" alt="">
+                    </a>
+                    <div class="blog__info">
+                        <a href="" class="a-title">Nhà phố hai mái giúp gia chủ không cần điều hòa</a>
+                        <div class="author">
+                            20/07/2020 - Kiến Vàng
+                        </div>
+                        <p>
+                            Căn nhà trên mảnh đất 68 m2 ở quận 9 của một gia đình ba người. Để ngôi nhà thông gió và ít
+                            cần sử dụng điều hòa, kiế...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-sm-4 blogitem">
+                    <a href="" class="bloglink">
+                        <img src="./img/blog/bloglist-1-963x600-1-1.webp" alt="">
+                    </a>
+                    <div class="blog__info">
+                        <a href="" class="a-title">Nhà phố hai mái giúp gia chủ không cần điều hòa</a>
+                        <div class="author">
+                            20/07/2020 - Kiến Vàng
+                        </div>
+                        <p>
+                            Căn nhà trên mảnh đất 68 m2 ở quận 9 của một gia đình ba người. Để ngôi nhà thông gió và ít
+                            cần sử dụng điều hòa, kiế...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog -->
+    <!-- banner -->
+    <div class="banneremail row m0">
+        <div class="p6 text-center">
+            <h3>ĐĂNG KÝ NHẬN TIN TỪ ANT HOME</h3>
+            <p>Đăng ký nhận bản tin khuyến mãi. Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn!</p>
+            <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
+                class="has-validation-callback">
+                <input type="email" class="form-control" value="" placeholder="Email của bạn" name="EMAIL" id="mail"
+                    aria-label="Đăng ký nhận tin">
+                <button name="subscribe" id="subscribe">Đăng ký</button>
+            </form>
+        </div>
+    </div>
+    <!-- main -->
+    <!-- footer  -->
+    <div class="footer row m0">
+        <div class="p6">
+            <div class="col-lg-3 col-sm-6 col-12 mt-2 footer__item">
+                <h4 class="footer-title">LIÊN HỆ VỚI ANT HOME</h4>
+                <p><strong>Địa chỉ: </strong>70 Lu Gia, Ward 15, District 11, Ho Chi Minh City</p>
+                <p><strong>Điện thoại: </strong><a href="">1900 6750</a></p>
+                <p><strong>Email: </strong><a href="">support@sapo.vn</a></p>
+                <a href="/" title="Ant Home" class="logo-wrapper">
+                    <img class="lazy img-fluid loaded" src="./img/logo/logo.png" data-was-processed="true">
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 mt-2 footer__item">
+                <h4 class="footer-title">LIÊN HỆ VỚI ANT HOME</h4>
+                <div class="footer-menu">
+                    <a href="">Giới thiệu</a><br>
+                    <a href="">Chính sách bảo mật thanh toán</a><br>
+                    <a href="">Bảo mật thông tin cá nhân</a><br>
+                    <a href="">Quy chế hoạt động</a><br>
+                    <a href="">Bán hàng cùng Ant Home</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 mt-2 footer__item">
+                <h4 class="footer-title">HỖ TRỢ KHÁCH HÀNG</h4>
+                <div class="footer-menu">
+                    <a href="">Hướng dẫn đặt hàng</a><br>
+                    <a href="">Quy trình giao hàng & thanh toán</a><br>
+                    <a href="">Quy trình đổi trả & bảo hành</a><br>
+                    <a href="">Chính sách giải quyết khiếu nại</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 mt-2 footer__item">
+                <h4 class="footer-title">KẾT NỐI VỚI CHÚNG TÔI</h4>
+                <div class="footer-social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <h4 class="footer-title">PHƯƠNG THỨC THANH TOÁN</h4>
+                <div class="footer-pay">
+                    <img src="./img/footer/payment_1.svg" alt="">
+                    <img src="./img/footer/payment_2.svg" alt="">
+                    <img src="./img/footer/payment_3.svg" alt="">
+                    <img src="./img/footer/payment_4.svg" alt="">
+                    <img src="./img/footer/payment_5.svg" alt="">
+                    <img src="./img/footer/payment_6.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center cblack bgwhite1">
+            <span>© Bản quyền thuộc về <b>Kiến Vàng</b> <span class="s480-f">|</span> Cung cấp bởi <a
+                    href="">Sapo</a></span>
+        </div>
+    </div>
+    <!-- footer  -->
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+/* checked nav */
+.navmobile {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 11;
+  width: 330px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--color-white);
+  box-shadow: 0 0 6px #96c3f3;
+  transform: translateX(-100%);
+  transition: all linear 0.2s;
+}
+.cartmobile,
+.searchnav{
+  visibility: hidden;
+  opacity: 0;
+  z-index: 11;
+  width: 330px;
+  padding: 10px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-white);
+  box-shadow: 0 0 6px #96c3f3;
+  transform: translateX(100%);
+  transition: all linear 0.2s;
+}
+.overlaycart,
+.overlaysearch,
+.overlaynav {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  display: none;
+  background-color: var(--color-black);
+  animation: fadeIn linear 0.2s;
+}
+@keyframes fadeIN {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.cart__input,
+.search__input,
+.nav__input{
+  display: none;
+}
+.cart__input:checked~.overlaycart,
+.search__input:checked~.overlaysearch,
+.nav__input:checked~.overlaynav {
+  display: block;
+}
+.cart__input:checked~.cartmobile,
+.search__input:checked~.searchnav,
+.nav__input:checked~.navmobile {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+/* checked nav */
+
+
